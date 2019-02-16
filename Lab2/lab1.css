@@ -1,0 +1,201 @@
+
+* {
+  box-sizing: border-box;
+}
+#testP {text-align:center; color:red}
+p {font-family: "Arial";
+    font-size:11pt;
+    margin:1px 0px 20px 0px;
+}
+a {font-family: "Arial";}
+h1{font-family: "Arial";
+    margin:10px 0px 0px 0px;
+}
+title{font-family: "Arial";}
+
+ul{
+    list-style-type: none;
+
+    padding:0;
+    overflow:hidden;
+
+
+}
+#nav {
+    background-color: #333;
+
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    float: left;
+}
+
+li a{
+    display: block;
+    color: white;
+    text-align:center;
+    padding: 14px 24px;
+    text-decoration: none;
+
+}
+
+li a:hover {
+    color: #D1DE44;
+}
+
+.rectangle{
+    width: 100%;
+    background-color: #b0b1ae;
+    position: absolute;
+    height: 45vw;
+
+}
+
+.slider{
+    position: center;
+    position: relative;
+    top: 5%;
+    margin-right:5%;
+    margin-left: 5%;
+
+}
+
+.lRect{
+    position:absolute;
+    top:35%;
+    background-color: #85868b;
+    width: 3%;
+    height: 15vw;
+
+}
+
+
+.rRect{
+    position:absolute;
+    top:35%;
+    right:0%;
+    background-color: #85868b;
+    width: 3%;
+    height: 15vw;
+
+}
+
+
+#city{
+    width: 100%;
+    height: auto;
+    border:1px solid white;
+}
+
+
+.column {
+  float: left;
+
+  width: 33.33%;
+  padding: 0%;
+  position: relative;
+  top:68px;
+    margin-top:48%;
+    margin-right:0%
+}
+
+#col1{
+    margin-left:15%;
+    position: relative;
+}
+#col2{
+    margin-left:7.5%;
+    margin-right:7.5%;
+    position: relative;
+}
+#col3{
+    background-color:#efefee;
+    margin-right:6%;
+    padding:3%;
+    position: relative;
+    height: 335px;
+
+
+}
+#sb{
+    text-align: center;
+    margin-bottom: 0px;
+}
+#scroll{
+  height:302px;
+  overflow:scroll;
+}
+#img1{
+    position: relative;
+    width: 100%;
+    height:auto;
+
+
+}
+#img2{
+    position: relative;
+    width: 100%;
+    height:auto;
+
+
+}
+
+.break{
+  height:1000px;
+  width:2px;
+  margin-bottom: 25vw;
+
+
+}
+
+
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    background-color:black;
+    display: flex;
+    justify-content: center;
+    height:60px;
+
+}
+
+#b{
+    display: block;
+    color: grey;
+    text-align:center;
+    padding: 10px 10px;
+    text-decoration: none;
+
+}
+
+
+
+ #trapezoid1 {
+    position:fixed;
+    left:0px;
+    bottom: 60px;
+      border-bottom: 40px solid black;
+      border-left: 25px solid black;
+      border-right: 70px solid transparent;
+
+      width: 15%;
+}
+ #trapezoid2 {
+    position:fixed;
+    right:0px;
+    bottom: 60px;
+      border-bottom: 40px solid black;
+      border-right: 25px solid black;
+      border-left: 70px solid transparent;
+
+      width: 15%;
+}

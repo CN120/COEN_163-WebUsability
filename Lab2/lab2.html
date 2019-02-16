@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href = "lab2.css">
+    <img src="Design Assets Lab1/Logo.png" alt="Logo" width="225" height="77">
+    <img id="menu"  onclick="toggleMenu()" src="Design Assets Lab2/Button-01.svg" alt= "hamburger menu" width="40" height="auto">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> Lab 2 </title>
+</head>
+<body>
+  <div id ="slidedown">
+    <ul id="nav">
+        <li><a class="navList" href="nothing">HOME</a></li>
+        <li><a class="navList" href="nothing">ABOUT</a></li>
+        <li><a class="navList" href="nothing">WORK</a></li>
+        <li><a class="navList" id="lastIem" href="nothing">NEWS</a></li>
+    </ul>
+  </div>
+    <div class="container">
+    <div id="rectangle">
+
+        <div id="img"><img id="city" src="Design Assets Lab1/Photo-01.jpg" alt="blurred city"></div>
+        <div id="lRect"></div>
+        <div id="rRect"></div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <section id="col1">
+                <img id="img1" src="Design Assets Lab1/Photo-02.jpg" alt="green cloud">
+                <h1 class="header">Title Head</h1>
+                <p class= "text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat, duis autem vel.</p>
+            </section>
+        </div>
+        <div class="column">
+            <section id="col2">
+                <img id="img2" src="Design Assets Lab1/Photo-03.jpg" alt="pink cloud">
+                <h1 class="header">Title Head</h1>
+                <p class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat, duis autem vel.</p>
+            </section>
+
+
+        </div>
+        <div class="column">
+            <aside id="col3">
+                <h1 id="sb">Side Bar</h1>
+                <div id=scroll>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat, duis autem vel.Lorem ipsum dolor sit amet.</p>
+                    <p> </p>
+                    <p>Lorem ipsumonsectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat, duis autem.</p>
+                </div>
+
+            </aside>
+
+
+        </div>
+    </div>
+    <div class="break"></div>
+    <div class="foot">
+        <footer>
+            <ul>
+            <li><a id="b" href="nothing">Home</a></li>
+            <li><a id="b"> | </a></li>
+            <li><a id="b" href="nothing">About</a></li>
+            <li><a id="b"> | </a></li>
+            <li><a id="b" href="nothing">Work</a></li>
+            <li><a id="b"> | </a></li>
+            <li><a id="b" href="about.asp">News</a></li>
+            </ul>
+        </footer>
+
+    </div>
+  </div>
+    <div id="trapezoid1"> </div>
+    <div id="trapezoid2"> </div>
+<script>
+    function toggleMenu() {
+      var x = document.getElementById("nav");
+      var y = document.getElementById("slidedown");
+      var l = document.getElementById("lRect");
+      var r = document.getElementById("rRect");
+      if(x.style.display === "none"){
+        document.getElementById("menu").src = "Design Assets Lab2/Button-02.svg";
+        x.style.display = "inline-block";
+        y.style.display = "block"
+        l.style.top = "calc(340px + 13vw)";
+        r.style.top = "calc(340px + 13vw)";
+      }  else{
+        x.style.display = "none";
+        y.style.display = "none";
+        document.getElementById("menu").src = "Design Assets Lab2/Button-01.svg";
+        l.style.top = "calc(100px + 13vw)";
+        r.style.top = "calc(100px + 13vw)";
+
+      }
+    }
+</script>
+</body>
+</html>
